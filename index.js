@@ -20,8 +20,12 @@ document.querySelector("#btn").addEventListener("click", () => {
 
 // Adjust width of input field
 // https://stackoverflow.com/questions/3392493/adjust-width-of-input-field-to-its-input
-inputElm.addEventListener("input", () => {
-    inputElm.style.width = (inputElm.value.length + 2) + "ch"
+inputElm.addEventListener("input", (event) => {
+    inputElm.style.width = `${inputElm.value.length + 2}ch`
+    if (isNaN(inputElm.value)) {
+        event.preventDefault()
+        window.alert("Please enter a valid number")
+    }
 })
 
 function render() {
