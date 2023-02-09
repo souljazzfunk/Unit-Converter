@@ -7,7 +7,7 @@ const METER_TO_FOOT = 3.28084
 const LITER_TO_GALLON = 0.264172
 const KILOGRAM_TO_POUND = 2.20462
 
-const inputElm = document.querySelector("#input")
+const inputElm = document.querySelector("#input-form")
 const pLength = document.querySelector("#conv-length")
 const pVolume = document.querySelector("#conv-volume")
 const pMass = document.querySelector("#conv-mass")
